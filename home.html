@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Side Navigation Bar</title>
-	<link rel="stylesheet" href="styles.css">
+	<title> SmartSource AI</title>
+    <link rel="icon" href="image(3).png" type="image/gif" sizes="16*16">
+    <link rel="stylesheet" href="styles.css">
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
@@ -32,12 +35,58 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
       </div> -->
     </div>
-    <div class="main_content">
-        <div class="header">Welcome!! Have a nice day.</div>  
-        <div class="info">
-          
-      </div>
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <a href="/index.html">
+                <div class="logo">
+
+                </div>
+                </a>
+            </div>
+            <!-- <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div> -->
+            <div class="nav-search">
+                <!-- <select class="search-select">
+                    <option>All</option>
+                </select> -->
+                <input placeholder="Search Materials" class="search-input">
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">
+                    Account
+                    <select>
+                        <option class="kuchbhi" id="loginOption">LOGIN</option>
+                    </select>
+                </p>
+            </div>
+            
+            <script>
+                document.getElementById("loginOption").addEventListener("click", function() {
+                    window.location.href = "/login.html"; // Replace "/login.html" with the actual URL of your login page
+                });
+            </script>
+            
+            
+            
+        </div>
+    </header>
+    
+    
+</div>
+<div>
+    <p>
+        <image src="image(3).png" />
+    </p>
 </div>
 
 </body>
