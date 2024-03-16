@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Passward</title>
     <style>
         body{
             background-color:white;
@@ -11,7 +12,7 @@
             font-size: xx-large;
                 font-weight: bolder;
               padding: 2px;
-             text-decoration: underline;
+           /*  text-decoration: underline;*/
             }
         .container{
             text-align: center;
@@ -44,40 +45,28 @@
             margin: 15px;
            font-weight: bolder;
         }
-        .footer{
-            padding: 5px;
-        }
-        .footer a {
-            margin: 10px;
-        }
-       
-    </style>
-    <title>Login Page</title>
+        </style>
 </head>
 <body>
     <div class="container">
-   <form>
-        <div class="h2">Login</div>
+    <form >
+        <div class="h2">Passward Reset</div>
         <div class="box"> 
             <div>EMAIL</div>
             <input type="email" placeholder="ENTER EMAIL">
         </div>
         <div class="box">
             <div>PASSWARD</div>
-            <input type="password" placeholder="ENTER PASSWARD">
+            <input type="password" placeholder="ENTER NEW PASSWARD">
         </div>
         <div class="login">
-            <button>LOGIN</button>
+            <button>RESET</button>
         </div>
-    </form>
-        <div class="footer">
-           <a href="singup.html">New User</a>
-           <a href="forgotPass.html">Forgot password?</a>
-        </div>
-    </div>
+</form>
+</div>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function() {
         const form = document.querySelector('form');
         form.addEventListener('submit', function(event) {
             event.preventDefault();

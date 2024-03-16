@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
     <style>
         body{
             background-color:white;
@@ -24,17 +25,17 @@
             box-shadow:0 5px  10px 5px ;
             transform: translate(-50%,-50%);
         }
-        .login button{
+        .signup button{
             margin: 25px;
             background-color: rgb(35, 47, 214);
             height: 6vh;
-            width: 20vw;
+            width: 40vw;
             border-radius: 10px;
             color: aliceblue;
         }
         .box input{
             height: 6vh;
-            width: 20vw;
+            width: 40vw;
             border-color: antiquewhite;
             border-radius: 10px;
             text-align: center;
@@ -50,30 +51,44 @@
         .footer a {
             margin: 10px;
         }
-       
+        .footer input {
+            margin: 10px;
+            padding: 5px;
+        }
+        .container img{
+            border-radius: 40%;
+            position: sticky;
+        }
     </style>
-    <title>Login Page</title>
 </head>
 <body>
     <div class="container">
-   <form>
-        <div class="h2">Login</div>
+        <form>
+        <div class="h2">SignUp</div>
+
         <div class="box"> 
             <div>EMAIL</div>
             <input type="email" placeholder="ENTER EMAIL">
         </div>
+
         <div class="box">
             <div>PASSWARD</div>
-            <input type="password" placeholder="ENTER PASSWARD">
-        </div>
-        <div class="login">
-            <button>LOGIN</button>
+            <input type="password" placeholder="ENTER  YOUR PASSWARD">
+
+            <div class="box"> 
+            <div>ADDRESS</div>
+            <input type="text" placeholder="ENTER  YOUR ADDRESS">
+            </div>
+
+            <div class="box"> 
+            <div>PHONE NUMBER</div>
+            <input type="number" placeholder="ENTER  YOUR PHONE NUMBER">
+            </div>
+
+        <div class="signup">
+            <button>SIGNUP</button>
         </div>
     </form>
-        <div class="footer">
-           <a href="singup.html">New User</a>
-           <a href="forgotPass.html">Forgot password?</a>
-        </div>
     </div>
 </body>
 <script>
@@ -83,9 +98,12 @@
             event.preventDefault();
             const email = document.querySelector('input[type="email"]').value;
             const password = document.querySelector('input[type="password"]').value;
-            
+           const address=document.querySelector('input[type="text"]').value;
+           const phoneNo=document.querySelector('input[type="number"]').value;
             console.log('Email:', email);
             console.log('Password:', password);
+            console.log('Address:'.address);
+            console.log('Phone:',phoneNo);
         });
     });
 </script>
