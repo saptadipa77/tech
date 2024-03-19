@@ -226,6 +226,7 @@ background-color: #2f312f;
   padding-top: 50px ;
   font-size:xx-large;
   font-weight: 1000;
+  color: #fff;
 }
 .cont{
   border:8px solid #594f8d;
@@ -243,6 +244,7 @@ background-color: #2f312f;
   z-index: -1;
   transition: opacity 0.3s ease-in-out, z-index 0s ease-in-out;
 } */
+
 
 .fix:hover{
   opacity: 1;
