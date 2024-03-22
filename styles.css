@@ -229,7 +229,7 @@ background-color: #2f312f;
   color: #fff;
 }
 .cont{
-  border:8px solid #594f8d;
+  border:5px solid #594f8d;
 }
 
 /* .fix {
@@ -254,4 +254,17 @@ background-color: #2f312f;
   justify-content: flex-end;
   background: linear-gradient(180deg, rgba(21, 22, 24, 0.31) 0%, #151618 70%);
   transition-delay: 0.1s;
+}
+.bot{
+  display: inline-block;
+}
+.material-symbols-outlined{
+  margin-left: 1700px;
+  font-size: 80px;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+.boot{
+  text-decoration:solid;
+  color: #f3f5f9;
 }
