@@ -22,7 +22,7 @@
     display: inline-block;
     font-size: 16px;
     font-size: xx-large;
-    margin-left: 84vh;
+    /* margin-left: 84vh; */
     border-radius: 50px;
 
 }
@@ -36,7 +36,7 @@
     display: inline-block;
     font-size: 16px;
     font-size: xx-large;
-    margin-left: 86vh;
+    /* margin-left: 86vh; */
     border-radius: 50px;
 
 }
@@ -49,4 +49,9 @@
   display: flex;
   text-decoration: black;
 
+}
+.container3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
