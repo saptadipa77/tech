@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Passward</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        .h2{    
+            font-size: xx-large;
+                font-weight: bolder;
+              padding: 2px;
+           /*  text-decoration: underline;*/
+            }
+        .container{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 15px;
+            box-shadow:0 5px  10px 5px ;
+            transform: translate(-50%,-50%);
+        }
+        .login button{
+            margin: 25px;
+            background-color: rgb(35, 47, 214);
+            height: 6vh;
+            width: 20vw;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+        .box input{
+            height: 6vh;
+            width: 20vw;
+            border-color: antiquewhite;
+            border-radius: 10px;
+            text-align: center;
+            border-color: black;
+        }
+        .box div{
+            margin: 15px;
+           font-weight: bolder;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+    <form >
+        <div class="h2">Passward Reset</div>
+        <div class="box"> 
+            <div>EMAIL</div>
+            <input type="email" placeholder="ENTER EMAIL">
+        </div>
+        <div class="box">
+            <div>PASSWARD</div>
+            <input type="password" placeholder="ENTER NEW PASSWARD">
+        </div>
+        <div class="login">
+            <button>RESET</button>
+        </div>
+</form>
+</div>
+</body>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.querySelector('input[type="email"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+            
+            console.log('Email:', email);
+            console.log('Password:', password);
+        });
+    });
+</script>
+</html>
